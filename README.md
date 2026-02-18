@@ -33,3 +33,26 @@ direction TB
     Persona --|> Estudiante
 ```
 
+
+#UML Ejercicio 3
+
+```mermaid
+classDiagram
+direction TB
+    class Computadora {
+    }
+
+    class PlacaBase {
+    }
+
+    class Raton {
+    }
+
+    Computadora <|--* PlacaBase
+    Computadora <|--o Raton
+```
+
+
+
+
+
