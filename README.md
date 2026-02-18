@@ -87,13 +87,52 @@ direction TB
 	    pagar(MetodoPago miMetodo) double
     }
 
-	<<Interface>> MetodoPago
+	<<interface>> MetodoPago
 
     MetodoPago --|> Tarjeta
     MetodoPago --|> PayPal
     Carrito ..|> MetodoPago
 
 ```
+
+# UML Ejercicio 6
+```mermaid
+classDiagram
+direction TB
+    class Libro {
+	    isbn: String
+	    +prestar()
+	    +devolver()
+    }
+
+    class Revista {
+	    numeroEdicion: int
+	    +prestar()
+	    +devolver()
+    }
+
+    class Usuario {
+	    nombre: String
+	    numCarnet: int
+    }
+
+    class Recurso {
+	    -id: int
+	    -titulo: String
+	    +prestar()
+	    +devolver()
+    }
+
+	<<abstract>> Recurso
+
+    Recurso --|> Libro
+    Recurso --|> Revista
+    Usuario "1" --> "*" Recurso
+
+```
+
+
+
 
 
 
