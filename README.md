@@ -66,6 +66,36 @@ direction TB
     CentroComercial "1" <|--* "*" Tienda
 ```
 
+# UML Ejercicio 5
+
+``` mermaid
+classDiagram
+direction TB
+    class MetodoPago {
+	    procesar(importe) double
+    }
+
+    class Tarjeta {
+	    procesar(importe) double
+    }
+
+    class PayPal {
+        procesar(importe) double
+    }
+
+    class Carrito {
+	    pagar(MetodoPago miMetodo) double
+    }
+
+	<<Interface>> MetodoPago
+
+    MetodoPago --|> Tarjeta
+    MetodoPago --|> PayPal
+    Carrito ..|> MetodoPago
+
+```
+
+
 
 
 
