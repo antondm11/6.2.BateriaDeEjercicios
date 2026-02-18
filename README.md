@@ -21,13 +21,13 @@ direction TB
 classDiagram
 direction TB
     class Persona {
-	    nombre: String
-	    DNI: String
+	    -nombre: String
+	    -DNI: String
     }
 
     class Estudiante {
-	    numeroExpediente: String
-	    notaMedia: double
+	    -numeroExpediente: String
+	    -notaMedia: double
     }
 
     Persona --|> Estudiante
