@@ -34,7 +34,7 @@ direction TB
 ```
 
 
-#UML Ejercicio 3
+# UML Ejercicio 3
 
 ```mermaid
 classDiagram
@@ -52,6 +52,19 @@ direction TB
     Computadora <|--o Raton
 ```
 
+# UML Ejercicio 4
+
+``` mermaid
+classDiagram
+direction TB
+    class CentroComercial {
+    }
+
+    class Tienda {
+    }
+
+    CentroComercial "1" <|--* "*" Tienda
+```
 
 
 
