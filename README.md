@@ -15,3 +15,21 @@ direction TB
     }
 ```
 
+# UML Ejercicio 2
+
+``` mermaid
+classDiagram
+direction TB
+    class Persona {
+	    nombre: String
+	    DNI: String
+    }
+
+    class Estudiante {
+	    numeroExpediente: String
+	    notaMedia: double
+    }
+
+    Persona --|> Estudiante
+```
+
