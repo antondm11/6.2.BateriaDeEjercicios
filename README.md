@@ -1,7 +1,9 @@
 # 6.2.BateriaDeEjercicios
 Repo para los ejercicios de diagrama de clases
 
-````mermaid  
+# UML Ejercicio 1
+
+```mermaid  
 classDiagram 
 direction TB
     class Usuario {
@@ -11,3 +13,5 @@ direction TB
 	    +cambiarPassword(String nueva) void
 	    -validar email() void
     }
+```
+
