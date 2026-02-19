@@ -101,14 +101,14 @@ classDiagram
 direction TB
     class Libro {
 	    -isbn: String
-	    +prestar()
-	    +devolver()
+	    +prestar() void
+	    +devolver() void
     }
 
     class Revista {
 	    -numeroEdicion: int
-	    +prestar()
-	    +devolver()
+	    +prestar() void
+	    +devolver() void
     }
 
     class Usuario {
@@ -119,8 +119,8 @@ direction TB
     class Recurso {
 	    -id: int
 	    -titulo: String
-	    +prestar()
-	    +devolver()
+	    +prestar() void
+	    +devolver() void
     }
 
 	<<abstract>> Recurso
