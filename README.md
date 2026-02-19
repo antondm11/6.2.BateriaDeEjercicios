@@ -20,14 +20,14 @@ direction TB
 ``` mermaid
 classDiagram
 direction TB
-    class Persona {
-	    -nombre: String
-	    -DNI: String
-    }
-
     class Estudiante {
 	    -numeroExpediente: String
 	    -notaMedia: double
+    }
+
+    class Persona {
+	    #nombre: String
+	    #DNI: String
     }
 
     Persona --|> Estudiante
