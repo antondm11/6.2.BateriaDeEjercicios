@@ -72,19 +72,19 @@ direction TB
 classDiagram
 direction TB
     class MetodoPago {
-	    procesar(importe) double
+	    +procesar(importe) double
     }
 
     class Tarjeta {
-	    procesar(importe) double
+	    +procesar(importe) double
     }
 
     class PayPal {
-        procesar(importe) double
+        +procesar(importe) double
     }
 
     class Carrito {
-	    pagar(MetodoPago miMetodo) double
+	    +pagar(MetodoPago miMetodo) double
     }
 
 	<<interface>> MetodoPago
