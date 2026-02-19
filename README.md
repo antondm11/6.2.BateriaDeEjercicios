@@ -100,20 +100,20 @@ direction TB
 classDiagram
 direction TB
     class Libro {
-	    isbn: String
+	    -isbn: String
 	    +prestar()
 	    +devolver()
     }
 
     class Revista {
-	    numeroEdicion: int
+	    -numeroEdicion: int
 	    +prestar()
 	    +devolver()
     }
 
     class Usuario {
-	    nombre: String
-	    numCarnet: int
+	    -nombre: String
+	    -numCarnet: int
     }
 
     class Recurso {
