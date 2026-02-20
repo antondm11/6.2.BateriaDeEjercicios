@@ -63,7 +63,7 @@ direction TB
     class Tienda {
     }
 
-    CentroComercial "1" <|--* "*" Tienda
+    CentroComercial "1" o-- "1..*" Tienda
 ```
 
 # UML Ejercicio 5
@@ -80,18 +80,18 @@ direction TB
     }
 
     class PayPal {
-        +procesar(importe) double
+	    +procesar(importe) double
     }
 
     class Carrito {
-	    +pagar(MetodoPago miMetodo) double
+	    +pagar(MetodoPago miMetodo) void
     }
 
 	<<interface>> MetodoPago
 
-    MetodoPago --|> Tarjeta
-    MetodoPago --|> PayPal
-    Carrito ..|> MetodoPago
+    MetodoPago ..|> Tarjeta
+    MetodoPago ..|> PayPal
+    Carrito ..> MetodoPago
 
 ```
 
@@ -127,7 +127,7 @@ direction TB
 
     Recurso --|> Libro
     Recurso --|> Revista
-    Usuario "1" --> "*" Recurso
+    Usuario "1..*" ..> "1..*" Recurso
 
 ```
 
