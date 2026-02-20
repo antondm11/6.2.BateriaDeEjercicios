@@ -9,7 +9,7 @@ direction TB
     class Usuario {
 	    -nombre: String
 	    -contrasena: String
-	    +email: String
+	    +correo: String
 	    +cambiarPassword(String nueva) void
 	    -validar email() void
     }
