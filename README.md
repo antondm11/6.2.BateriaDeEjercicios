@@ -48,8 +48,8 @@ direction TB
     class Raton {
     }
 
-    Computadora <|--* PlacaBase
-    Computadora <|--o Raton
+    Computadora --* PlacaBase
+    Computadora --o Raton
 ```
 
 # UML Ejercicio 4
